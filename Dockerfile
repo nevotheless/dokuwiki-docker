@@ -15,3 +15,4 @@ RUN apt-get update \
     && chown -R www-data:www-data .
 
 VOLUME /var/www/html/data
+VOLUME /var/www/html/lib/plugins
