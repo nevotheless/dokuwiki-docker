@@ -1,5 +1,5 @@
 #dokuwiki-docker dockerfile
-FROM php:7.0-apache
+FROM php:7.1-apache
 
 MAINTAINER tim@arctium.io
 
