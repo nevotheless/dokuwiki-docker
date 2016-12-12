@@ -13,6 +13,9 @@ RUN apt-get update \
     && find . -type d -exec chmod 755 {} \; \
     && find . -type f -exec chmod 644 {} \; \
     && chown -R www-data:www-data .
+    
+# hotfix
+COPY css.php /var/www/html/lib/exe/css.php
 
 VOLUME /var/www/html/data
 VOLUME /var/www/html/lib/plugins
