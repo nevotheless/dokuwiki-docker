@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/ununseptium/dokuwiki-docker.svg)](https://microbadger.com/images/ununseptium/dokuwiki-docker "Get your own image badge on microbadger.com")
+
 # dokuwiki-docker
 simple to use and highly versatile Open Source wiki ... containerized
 
