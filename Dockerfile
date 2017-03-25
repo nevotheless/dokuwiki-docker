@@ -1,7 +1,7 @@
 #dokuwiki-docker dockerfile
 FROM php:7.1-apache
 
-MAINTAINER tim@arctium.io
+MAINTAINER kopplow.tim@gmail.com
 
 # Download dokuwiki source
 RUN curl -O https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
@@ -13,9 +13,6 @@ RUN apt-get update \
     && find . -type d -exec chmod 755 {} \; \
     && find . -type f -exec chmod 644 {} \; \
     && chown -R www-data:www-data .
-    
-# hotfix
-COPY css.php /var/www/html/lib/exe/css.php
 
 VOLUME /var/www/html/data
 VOLUME /var/www/html/lib/plugins
