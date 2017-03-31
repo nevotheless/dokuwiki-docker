@@ -1,7 +1,7 @@
 #dokuwiki-docker dockerfile
 FROM php:7.1-apache
 
-MAINTAINER kopplow.tim@gmail.com
+LABEL maintainer kopplow.tim@gmail.com
 
 # Download dokuwiki source
 RUN curl -O https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
