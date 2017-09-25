@@ -13,6 +13,4 @@ RUN apt-get update \
     && find . -type d -exec chmod 755 {} \; \
     && find . -type f -exec chmod 644 {} \; \
     && chown -R www-data:www-data .
-
-VOLUME /var/www/html/data
-VOLUME /var/www/html/lib/plugins
+    
