@@ -1,14 +1,14 @@
 [![](https://images.microbadger.com/badges/image/ununseptium/dokuwiki-docker.svg)](https://microbadger.com/images/ununseptium/dokuwiki-docker "Get your own image badge on microbadger.com")
 
 # dokuwiki-docker
-simple to use and highly versatile Open Source wiki ... containerized
+Simple to use and highly versatile open-source wiki... conveniently packaged as a container image
 
 > This Dockerfile contains a thinner and more modern approach to run a dockerized version of dokuwiki. 
-> It's based on the php:7.1-apache image which ships with apache and php7 right out of the box.
+> It's based on the php:7.3-apache image which ships with apache and php7 right out of the box.
 
-## how to run
+## How-to use the Image
 
-Instead of just starting a container right from the dockerfile use the docker-compose feature with a `docker-compose.yml` file like this instead.
+Instead of just starting a container right from the dockerfile, just use the docker-compose feature with a `docker-compose.yml` file like this instead.
 
 ```
 version: '2'
