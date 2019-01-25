@@ -29,10 +29,10 @@ volumes:
 
 Once you either navigated to the cloned repo or created the file by yourself, you can use these commands:
 
-Start the Service via
+**Start the Service via**
 
 `docker-compose up -d dokuwiki`
 
-Tear down the Service via
+**Tear down the Service via**
 
 `docker-compose down`
