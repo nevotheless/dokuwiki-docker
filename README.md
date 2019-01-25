@@ -3,26 +3,36 @@
 # dokuwiki-docker
 Simple to use and highly versatile open-source wiki... conveniently packaged as a container image
 
-> This Dockerfile contains a thinner and more modern approach to run a dockerized version of dokuwiki. 
-> It's based on the php:7.3-apache image which ships with apache and php7 right out of the box.
+> This Dockerfile contains a streamlined and not blown-up approach to run a dockerized version of dokuwiki. 
+> It's based on the php:7.x-apache image which ships with apache and php7 right out of the box.
 
-## How-to use the Image
+## How-to use this
 
-Instead of just starting a container right from the dockerfile, just use the docker-compose feature with a `docker-compose.yml` file like this instead.
+Instead of just starting the image, you should consider using a docker-compose file to spin up your services. The example file will attach a persistent volume to your dokuwiki service and make sure the needed ports are openened.
 
 ```
-version: '2'
+# Example docker-compose file
+version: '3'
 services:
   dokuwiki:
     image: 'ununseptium/dokuwiki-docker'
     ports:
       - '80:80'
       - '443:443'
-      - '22:22'
     volumes:
-      - 'data':/var/www/html'
+      - 'data:/var/www/html'
 volumes:
   data:
     driver: local
 
 ```
+
+Once you either navigated to the cloned repo or created the file by yourself, you can use these commands:
+
+Start the Service via
+
+`docker-compose up -d dokuwiki`
+
+Tear down the Service via
+
+`docker-compose down`
