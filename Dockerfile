@@ -1,4 +1,3 @@
-# dokuwiki-docker dockerfile
 FROM php:apache
 
 LABEL maintainer tim@arctium.io
