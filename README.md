@@ -31,7 +31,7 @@ Once you either navigated to the cloned repo or created the file by yourself, yo
 
 **Start the Service via**
 
-`docker-compose up -d dokuwiki`
+`docker-compose up`
 
 **Tear down the Service via**
 
