@@ -1,0 +1,262 @@
+{
+  "info": {
+    "id": "ses_0994633e1ffecC1ZQX1N82cHxA",
+    "slug": "misty-island",
+    "projectID": "70ca2adce308b3d90be32be83f3a006c6cd1309e",
+    "directory": "/Users/tim/dokuwiki-docker",
+    "path": "",
+    "title": "New session - 2026-07-15T17:01:20.287Z",
+    "agent": "build",
+    "model": {
+      "id": "big-pickle",
+      "providerID": "opencode"
+    },
+    "version": "1.17.15",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "cost": 0,
+    "tokens": {
+      "input": 7839,
+      "output": 72,
+      "reasoning": 53,
+      "cache": {
+        "read": 9728,
+        "write": 0
+      }
+    },
+    "time": {
+      "created": 1784134880287,
+      "updated": 1784134889348
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1784134880326
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "big-pickle"
+        },
+        "summary": {
+          "diffs": [
+            {
+              "file": "hello-entire.md",
+              "patch": "Index: hello-entire.md\n===================================================================\n--- hello-entire.md\t\n+++ hello-entire.md\t\n@@ -0,0 +1,3 @@\n+# Hello Entire\n+\n+This repo is my first Entire checkpoint demo.\n",
+              "additions": 3,
+              "deletions": 0,
+              "status": "added"
+            }
+          ]
+        },
+        "id": "msg_f66b9cc46001pZMVFRCVEAamyy",
+        "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "Create a file named hello-entire.md with a short note explaining that this repo is my first Entire checkpoint demo.",
+          "id": "prt_f66b9cc49001umiUYxzKjrSGo9",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9cc46001pZMVFRCVEAamyy"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_f66b9cc46001pZMVFRCVEAamyy",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/tim/dokuwiki-docker",
+          "root": "/Users/tim/dokuwiki-docker"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 8824,
+          "input": 7703,
+          "output": 56,
+          "reasoning": 41,
+          "cache": {
+            "write": 0,
+            "read": 1024
+          }
+        },
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "time": {
+          "created": 1784134880585,
+          "completed": 1784134889345
+        },
+        "finish": "tool-calls",
+        "id": "msg_f66b9cd49001JMwFnalyF6RIC8",
+        "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA"
+      },
+      "parts": [
+        {
+          "snapshot": "3d00a0b1a88e12fadcafe94aa8da71325f39f9e7",
+          "type": "step-start",
+          "id": "prt_f66b9ea6b001SieJ07GEUfLUjL",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9cd49001JMwFnalyF6RIC8"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants me to create a file named `hello-entire.md` with a short note explaining that this repo is their first Entire checkpoint demo. I should write this file with the appropriate content.",
+          "time": {
+            "start": 1784134888046,
+            "end": 1784134888813
+          },
+          "id": "prt_f66b9ea6e0017yJAC52rT5I3l1",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9cd49001JMwFnalyF6RIC8"
+        },
+        {
+          "type": "tool",
+          "tool": "write",
+          "callID": "call_e7f1e6c891184fe18df1ad7b",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/tim/dokuwiki-docker/hello-entire.md",
+              "content": "# Hello Entire\n\nThis repo is my first Entire checkpoint demo.\n"
+            },
+            "output": "Wrote file successfully.",
+            "metadata": {
+              "diagnostics": {},
+              "filepath": "/Users/tim/dokuwiki-docker/hello-entire.md",
+              "exists": false,
+              "truncated": false
+            },
+            "title": "hello-entire.md",
+            "time": {
+              "start": 1784134889181,
+              "end": 1784134889190
+            }
+          },
+          "id": "prt_f66b9ed70001iEEhexZjS9y17j",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9cd49001JMwFnalyF6RIC8"
+        },
+        {
+          "reason": "tool-calls",
+          "snapshot": "7e6af0ebb3d20ac4e85b2c7f1603584fa99c7fd5",
+          "type": "step-finish",
+          "tokens": {
+            "total": 8824,
+            "input": 7703,
+            "output": 56,
+            "reasoning": 41,
+            "cache": {
+              "write": 0,
+              "read": 1024
+            }
+          },
+          "cost": 0,
+          "id": "prt_f66b9ef540017nwtKh3a9F7xh2",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9cd49001JMwFnalyF6RIC8"
+        },
+        {
+          "type": "patch",
+          "hash": "3d00a0b1a88e12fadcafe94aa8da71325f39f9e7",
+          "files": [
+            "/Users/tim/dokuwiki-docker/hello-entire.md"
+          ],
+          "id": "prt_f66b9ef7e001CJ6OJGEys5oiCh",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9cd49001JMwFnalyF6RIC8"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_f66b9cc46001pZMVFRCVEAamyy",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/Users/tim/dokuwiki-docker",
+          "root": "/Users/tim/dokuwiki-docker"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 8868,
+          "input": 136,
+          "output": 16,
+          "reasoning": 12,
+          "cache": {
+            "write": 0,
+            "read": 8704
+          }
+        },
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "time": {
+          "created": 1784134889347,
+          "completed": 1784134893432
+        },
+        "finish": "stop",
+        "id": "msg_f66b9ef83001e1W9rXbNJWKBI0",
+        "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA"
+      },
+      "parts": [
+        {
+          "snapshot": "7e6af0ebb3d20ac4e85b2c7f1603584fa99c7fd5",
+          "type": "step-start",
+          "id": "prt_f66b9fddc001zauohxTieWUzRA",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9ef83001e1W9rXbNJWKBI0"
+        },
+        {
+          "type": "reasoning",
+          "text": "The file was created successfully. Let me confirm the content.",
+          "time": {
+            "start": 1784134893022,
+            "end": 1784134893185
+          },
+          "id": "prt_f66b9fdde0012baUI1AtqJ7Bne",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9ef83001e1W9rXbNJWKBI0"
+        },
+        {
+          "type": "text",
+          "text": "Created `hello-entire.md` in the repo root.",
+          "time": {
+            "start": 1784134893187,
+            "end": 1784134893365
+          },
+          "id": "prt_f66b9fe83001wlBSb8DZElkQMY",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9ef83001e1W9rXbNJWKBI0"
+        },
+        {
+          "reason": "stop",
+          "snapshot": "7e6af0ebb3d20ac4e85b2c7f1603584fa99c7fd5",
+          "type": "step-finish",
+          "tokens": {
+            "total": 8868,
+            "input": 136,
+            "output": 16,
+            "reasoning": 12,
+            "cache": {
+              "write": 0,
+              "read": 8704
+            }
+          },
+          "cost": 0,
+          "id": "prt_f66b9ff5b001GlE0J63aFgyXc9",
+          "sessionID": "ses_0994633e1ffecC1ZQX1N82cHxA",
+          "messageID": "msg_f66b9ef83001e1W9rXbNJWKBI0"
+        }
+      ]
+    }
+  ]
+}
