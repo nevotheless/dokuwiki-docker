@@ -1,8 +1,6 @@
-# Example docker-compose file
-version: '3'
 services:
   dokuwiki:
-    image: 'ununseptium/dokuwiki-docker'
+    build: .
     ports:
       - '80:80'
       - '443:443'
@@ -10,4 +8,3 @@ services:
       - 'data:/var/www/html'
 volumes:
   data:
-    driver: local
